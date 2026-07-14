@@ -397,6 +397,3 @@ Contributions are welcome. A good workflow for this repository is:
 
 For API changes, update the backend documentation in `docs/` as needed.
 
-## License
-
-No license file is currently included in this repository. If you plan to publish or reuse the project publicly, add an explicit license first.
