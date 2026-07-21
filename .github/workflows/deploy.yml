@@ -27,6 +27,6 @@ jobs:
           ssh -i ~/.ssh/quickbite_deploy -o IdentitiesOnly=yes ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "bash -se" << "EOF"
             echo "Deployment started!"
             cd /home/ubuntu/quickbite-api
-            git pull
+            git pull origin main
             docker compose up -d --build
           EOF
