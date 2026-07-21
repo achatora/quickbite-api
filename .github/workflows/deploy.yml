@@ -12,6 +12,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Debug secret
+        run: |
+          echo "Length: ${#EC2_USER}"
+          echo -n "$EC2_USER" | od -c | head -5
+        env:
+          EC2_USER: ${{ secrets.EC2_USER }}
+
       - name: Configure SSH key
         run: |
           mkdir -p ~/.ssh
