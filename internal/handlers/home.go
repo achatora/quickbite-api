@@ -8,5 +8,5 @@ import (
 )
 
 func HandleHome(c echo.Context) error {
-	return c.JSON(http.StatusOK, helpers.Success("Welcome to QuickBite API!", nil))
+	return c.JSON(http.StatusOK, helpers.Success("Welcome to QuickBite API!!!", nil))
 }
